@@ -2,7 +2,7 @@
 
 ![Active Badge](https://img.shields.io/badge/Project%20Status%3A-active%20%F0%9F%9F%A2-brightgreen)
 
-[![CI Actions 🤖](https://github.com/username/personal-blog-template/actions/workflows/ci.yml/badge.svg)](https://github.com/username/personal-blog-template/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/username/personal-blog-template?style=flat)
+[![CI Actions 🤖](https://github.com/HarrisFauntleroy/personal-blog-template/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/personal-blog-template/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/personal-blog-template?style=flat)
 
 A template for a blog, and portfolio.
 
