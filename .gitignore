@@ -1,0 +1,51 @@
+# Yarn
+.yarn*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+/node_modules
+.pnpm*
+
+# testing
+/coverage
+report.json
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# vercel
+.vercel
+
+# trunk
+.trunk
+
+# turborepo
+.turbo
+
+public/sitemap*
+public/robots*

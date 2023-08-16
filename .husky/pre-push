@@ -1,0 +1,15 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "This is a trunk based development branch"
+echo "Therefore tests, linting and build must pass before pushing"
+echo
+echo "======== Testing 🧪  ========"
+pnpm test
+echo "======== Testing ✅  ========"
+echo
+echo "======== Building 🏗️ ========"
+pnpm build
+echo "======== Building ✅ ========"
+echo
+echo "Tested ✅ Built ✅ Pushed 🚀"
