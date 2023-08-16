@@ -1,10 +1,10 @@
-# personal-blog-template
+# Personal Blog Template
 
 ![Active Badge](https://img.shields.io/badge/Project%20Status%3A-active%20%F0%9F%9F%A2-brightgreen)
 
 [![CI Actions 🤖](https://github.com/username/personal-blog-template/actions/workflows/ci.yml/badge.svg)](https://github.com/username/personal-blog-template/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/username/personal-blog-template?style=flat)
 
-My website, blog, and portfolio.
+A template for a blog, and portfolio.
 
 ---
 
@@ -48,3 +48,17 @@ full license [here](LICENSE).
 This software is currently a work in progress and considered in the ALPHA phase.
 As we continue to update and improve, please expect features to evolve and APIs
 to change. We appreciate your patience and value your feedback! 🙌
+
+## Screenshots 📸
+
+| ![Image 1](/public/1.png) |
+| :-----------------------: |
+|         _Image 1_         |
+
+| ![Image 2](/public/2.png) | ![Image 3](/public/3.png) |
+| :-----------------------: | :-----------------------: |
+|         _Image 2_         |         _Image 3_         |
+
+| ![Image 4](/public/4.png) | ![Image 5](/public/5.png) |
+| :-----------------------: | :-----------------------: |
+|         _Image 4_         |         _Image 5_         |
