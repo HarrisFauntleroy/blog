@@ -1,10 +1,16 @@
-import { marked } from "marked";
-import sanitizeHtml from "sanitize-html";
+import { useMantineColorScheme } from "@mantine/core";
+import dynamic from "next/dynamic";
 import { Commit } from "../lib/github/types";
 
+const Markdown = dynamic(
+  () =>
+    import("@harrisfauntleroy/design-system").then(({ Markdown }) => Markdown),
+  { ssr: false }
+);
+
 export function CommitComponent(commit: Commit) {
-  const parsed = marked(commit.message, { mangle: false, headerIds: false });
-  const sanitized = sanitizeHtml(parsed);
+  const { colorScheme } = useMantineColorScheme();
+
   return (
     <li
       key={commit.sha}
@@ -19,7 +25,7 @@ export function CommitComponent(commit: Commit) {
         style={{ color: "#586069", textDecoration: "none" }}
         className="bg-[#fafaf9]"
       >
-        <div dangerouslySetInnerHTML={{ __html: sanitized }}></div>
+        <Markdown colorScheme={colorScheme} source={commit.message} />
       </a>
       <div style={{ color: "#586069", fontSize: "12px", marginTop: "8px" }}>
         <span>Author: {commit.author.name}</span>

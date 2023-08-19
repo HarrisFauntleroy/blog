@@ -197,7 +197,9 @@ function RepositoryCard({ repository }: RepositoryCardProps) {
   const [commits, setCommits] = useState<GroupedEvents>({});
 
   useEffect(() => {
-    getCommits("HarrisFauntleroy").then((commits) => setCommits(commits));
+    getCommits("HarrisFauntleroy")
+      .then((commits) => setCommits(commits))
+      .catch((error) => console.error(error));
   }, []);
 
   return (
@@ -248,7 +250,7 @@ export const UserRepositories = ({
           { minWidth: 1200, cols: 4 },
         ]}
       >
-        {Boolean(repositories.length)
+        {repositories.length > 0
           ? repositories?.map((repository) => (
               <RepositoryCard key={repository.id} repository={repository} />
             ))

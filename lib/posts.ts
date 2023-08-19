@@ -45,6 +45,7 @@ export function getSortedPostsData() {
     const id = fileName.replace(/\.md$/, "");
     // Read markdown file as string
     const fullPath = path.join(postsDirectory, fileName);
+    // eslint-disable-next-line security/detect-non-literal-fs-filename
     const fileContents = readFileSync(fullPath, "utf8");
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);

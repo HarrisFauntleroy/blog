@@ -1,8 +1,9 @@
 import { Layout } from "@/components/AppLayout";
 import { PostTags } from "@/components/PostTags";
 import { Date } from "@/pages/posts";
-import { Text, Title, useMantineColorScheme } from "@mantine/core";
+import { Stack, Text, Title, useMantineColorScheme } from "@mantine/core";
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 import { Post as PostType, getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../styles.module.scss";
 
@@ -19,22 +20,32 @@ type PostProps = {
 export default function Post({ postData }: PostProps) {
   const { colorScheme } = useMantineColorScheme();
 
+  useEffect(() => {
+    if (postData.published === false) {
+      window.location.href = "/posts";
+    }
+  }, [postData.published]);
+
   return (
     <Layout>
       <article>
-        <Title order={1} style={{ textTransform: "capitalize" }}>
-          {postData?.title || "Untitled"}
-        </Title>
-        {postData?.description && (
-          <Text size="sm">{postData?.description}</Text>
-        )}
-        <Text size="sm" className={utilStyles.lightText}>
-          Published:{" "}
-          <Date className={utilStyles.lightText} dateString={postData?.date} />
-        </Text>
-        {postData?.tags && <PostTags tags={postData?.tags} />}
-        <br />
-        <Markdown colorScheme={colorScheme} source={postData?.content} />
+        <Stack spacing="xs">
+          <Title order={1} style={{ textTransform: "capitalize" }}>
+            {postData?.title || "Untitled"}
+          </Title>
+          {postData?.description && (
+            <Text size="sm">{postData.description}</Text>
+          )}
+          <Text size="sm" className={utilStyles.lightText}>
+            Published:{" "}
+            <Date
+              className={utilStyles.lightText}
+              dateString={postData?.date}
+            />
+          </Text>
+          {postData?.tags && <PostTags tags={postData?.tags} />}
+          <Markdown colorScheme={colorScheme} source={postData?.content} />
+        </Stack>
       </article>
     </Layout>
   );

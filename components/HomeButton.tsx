@@ -6,7 +6,6 @@ export const HomeButton = () => {
   const router = useRouter();
   const pathArray = router.pathname.split("/");
   pathArray.pop();
-  const newPath = pathArray.join("/") || "/";
 
   return (
     <Link href="/" style={{ textDecoration: "underline", marginLeft: "auto" }}>
