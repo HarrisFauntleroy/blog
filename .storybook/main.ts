@@ -5,10 +5,8 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
-    "@storybook/addon-mdx-gfm",
-    "@storybook/addon-coverage",
+    "@storybook/addon-designs",
   ],
   framework: {
     name: "@storybook/nextjs",
