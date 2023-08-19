@@ -13,9 +13,7 @@ const Markdown = dynamic(
 );
 
 type PostProps = {
-  postData: PostType & {
-    contentHtml: string;
-  };
+  postData: PostType;
 };
 
 export default function Post({ postData }: PostProps) {
@@ -36,7 +34,7 @@ export default function Post({ postData }: PostProps) {
         </Text>
         {postData?.tags && <PostTags tags={postData?.tags} />}
         <br />
-        <Markdown colorScheme={colorScheme} source={postData?.contentHtml} />
+        <Markdown colorScheme={colorScheme} source={postData?.content} />
       </article>
     </Layout>
   );
