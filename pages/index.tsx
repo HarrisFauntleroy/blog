@@ -2,7 +2,6 @@ import { Layout as MainLayout } from "@/components/AppLayout";
 import Posts from "@/components/Posts";
 import Title from "@/components/Title";
 import { useDailyQuote } from "@/hooks/useDailyQuote";
-import { SortedRepositories } from "@/lib/github/types";
 import { Post } from "@/lib/posts";
 import { Blockquote, Flex, Spoiler, Stack, Text } from "@mantine/core";
 import Link from "next/link";
@@ -11,8 +10,6 @@ import { getAllPosts } from "./api/posts/tags/[tag]";
 
 type Props = {
   posts: Post[];
-  githubProjects: SortedRepositories;
-  tags: string[];
 };
 
 const Index = ({ posts }: Props) => {
@@ -39,7 +36,6 @@ const Index = ({ posts }: Props) => {
 
 export async function getStaticProps() {
   const posts = getAllPosts(8);
-  // const githubProjects = await getUserRepositories("username");
 
   return {
     props: {
