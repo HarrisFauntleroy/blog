@@ -4,21 +4,34 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
-    "start": "next start",
-    "test": "jest --passWithNoTests",
-    "test-storybook": "test-storybook",
     "build-storybook": "storybook build",
-    "storybook": "storybook dev -p 6006",
+    "dev": "next dev",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
     "lint:fix": "pnpm lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "next start",
+    "storybook": "storybook dev -p 6006",
+    "test": "jest --passWithNoTests",
+    "test-storybook": "test-storybook"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
       "pnpm format",
       "pnpm lint:fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   },
   "prettier": {
@@ -110,19 +123,6 @@
     ],
     "root": true
   },
-  "browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "jest": {
     "coverageThreshold": {
       "global": {
@@ -181,22 +181,18 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.64.2",
-    "storybook": "^7.2.2",
+    "storybook": "^7.0.4",
     "typescript": "5.1.6"
   },
   "devDependencies": {
     "@jest/types": "29.5.0",
-    "@storybook/addon-essentials": "^7.2.2",
-    "@storybook/addon-interactions": "^7.2.2",
-    "@storybook/addon-links": "^7.2.2",
-    "@storybook/addon-mdx-gfm": "^7.2.2",
-    "@storybook/addon-onboarding": "^1.0.8",
-    "@storybook/addon-storyshots": "^7.2.2",
-    "@storybook/blocks": "^7.2.2",
-    "@storybook/nextjs": "^7.2.2",
-    "@storybook/react": "^7.2.2",
-    "@storybook/test-runner": "^0.13.0",
-    "@storybook/testing-library": "^0.2.0",
+    "@storybook/addon-essentials": "^7.0.4",
+    "@storybook/addon-interactions": "^7.0.4",
+    "@storybook/addon-links": "^7.0.4",
+    "@storybook/blocks": "^7.0.4",
+    "@storybook/nextjs": "^7.0.4",
+    "@storybook/react": "^7.0.4",
+    "@storybook/testing-library": "^0.1.0",
     "@types/jest": "^29.5.2",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
