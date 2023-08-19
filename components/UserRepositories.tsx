@@ -250,7 +250,7 @@ export const UserRepositories = ({
           { minWidth: 1200, cols: 4 },
         ]}
       >
-        {repositories.length > 0
+        {repositories?.length > 0
           ? repositories?.map((repository) => (
               <RepositoryCard key={repository.id} repository={repository} />
             ))
