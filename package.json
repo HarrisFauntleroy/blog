@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_66b2a6e6d032861",
+    "chromatic": "chromatic --exit-zero-on-changes",
     "dev": "next dev",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
