@@ -1,13 +1,11 @@
 @storybook/cli v7.2.2
 
-info => Cleaning outputDir: /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--81943-3CVkF98HLHMN
+info => Cleaning outputDir: /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--87779-69mMMlcnTYKV
 info => Loading presets
-WARN Could not resolve addon "@storybook/addon-designs", skipping. Is it installed?
-WARN Could not resolve addon "@storybook/addon-designs", skipping. Is it installed?
 info => Building manager..
-info => Manager built (153 ms)
+info => Manager built (204 ms)
 info => Compiling preview..
-info => Copying static files: /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/@storybook+manager@7.2.2/node_modules/@storybook/manager/static at /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--81943-3CVkF98HLHMN/sb-common-assets
+info => Copying static files: /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/@storybook+manager@7.2.2/node_modules/@storybook/manager/static at /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--87779-69mMMlcnTYKV/sb-common-assets
 WARN You (or an addon) are using the 'config' preset field. This has been replaced by 'previewAnnotations' and will be removed in 8.0
 info Addon-docs: using MDX2
 info => Using implicit CSS loaders
@@ -114,11 +112,12 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 9% setup compilation
 <s> [webpack.Progress] 10% building
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
-<s> [webpack.Progress] 27% building import loader ./node_modules/.pnpm/babel-loader@9.1.3_@babel+core@7.22.10_webpack@5.88.2/node_modules/babel-loader/lib/index.js
-<s> [webpack.Progress] 27% building 0/1 entries 6/19 dependencies 2/6 modules
-<s> [webpack.Progress] 20% building import loader ./node_modules/.pnpm/unplugin@1.4.0/node_modules/unplugin/dist/webpack/loaders/load.js
-<s> [webpack.Progress] 20% building 0/1 entries 12/20 dependencies 2/11 modules
-<s> [webpack.Progress] 53% building 1/1 entries 147/187 dependencies 32/90 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/.pnpm/babel-loader@9.1.3_@babel+core@7.22.10_webpack@5.88.2/node_modules/babel-loader/lib/index.js
+<s> [webpack.Progress] 10% building 0/1 entries 6/19 dependencies 2/6 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/.pnpm/unplugin@1.4.0/node_modules/unplugin/dist/webpack/loaders/load.js
+<s> [webpack.Progress] 10% building 0/1 entries 12/19 dependencies 2/11 modules
+<s> [webpack.Progress] 10% building 0/1 entries 117/145 dependencies 15/74 modules
+<s> [webpack.Progress] 53% building 1/1 entries 145/183 dependencies 34/88 modules
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
@@ -140,6 +139,37 @@ ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-templa
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:689:25
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:893:8
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:1013:5
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/neo-async@2.6.2/node_modules/neo-async/async.js:6883:13
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:996:45
+ERR!     at finishWithoutResolve (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:372:11)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:461:15
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:39:13
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:148:14
+ERR!     at next (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:35:3)
+ERR!     at forEachBail (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:49:9)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:61:5
+ERR!     at _next0 (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:8:1)
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:30:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+ERR!     at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
 ERR!  ModuleNotFoundError: Module not found: Error: Can't resolve '@/components/AppLayout' in '/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/pages'
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/Compilation.js:2022:28
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:817:13
@@ -151,6 +181,37 @@ ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-templa
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:689:25
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:893:8
 ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:1013:5
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/neo-async@2.6.2/node_modules/neo-async/async.js:6883:13
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:996:45
+ERR!     at finishWithoutResolve (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:372:11)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:461:15
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:39:13
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:148:14
+ERR!     at next (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:35:3)
+ERR!     at forEachBail (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:49:9)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:61:5
+ERR!     at _next0 (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:8:1)
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:30:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
+ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
+ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+ERR!     at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
 ERR! resolve '@/components/AppLayout' in '/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/pages'
 ERR!   Parsed request is a module
 ERR!   using description file: /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/package.json (relative path: ./pages)
@@ -177,5 +238,4 @@ ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/persona
 ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules/chromatic/node_modules/@/components doesn't exist
 ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules
 ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules/@/components doesn't exist
-WARN Could not resolve addon "@storybook/addon-designs", skipping. Is it installed?
 [?25l[2K[1G[36m?[39m [1mWould you like to help improve Storybook by sending anonymous crash reports?[22m [90m›[39m [90m(Y/n)[39m

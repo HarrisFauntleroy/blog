@@ -1,0 +1,6 @@
+.next
+.yarn
+dist
+node_modules
+storybook-static
+.pnpm*
