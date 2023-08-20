@@ -1,8 +1,29 @@
 # Personal Blog Template
 
-![Active Badge](https://img.shields.io/badge/Project%20Status%3A-active%20%F0%9F%9F%A2-brightgreen)
-
-[![CI Actions 🤖](https://github.com/HarrisFauntleroy/personal-blog-template/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/personal-blog-template/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/personal-blog-template?style=flat)
+<p align="center">
+    <a href="https://github.com/HarrisFauntleroy/personal-blog-template/releases">
+        <img alt="GitHub release" src="https://img.shields.io/github/package-json/v/HarrisFauntleroy/personal-blog-template?&style=for-the-badge">
+    </a>
+    <a href="/LICENSE.md">
+        <img alt="GitHub" src="https://img.shields.io/github/license/HarrisFauntleroy/personal-blog-template?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/personal-blog-template/graphs/contributors">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/HarrisFauntleroy/personal-blog-template?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/personal-blog-template/actions">
+        <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/HarrisFauntleroy/personal-blog-template/main?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/personal-blog-template/issues?q=is%3Aopen+is%3Aissue">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/HarrisFauntleroy/personal-blog-template?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/personal-blog-template/issues?q=is%3Aopen+is%3Aissue">
+        <img alt="GitHub issues" src="https://img.shields.io/github/last-commit/HarrisFauntleroy/personal-blog-template?&style=for-the-badge">
+    </a>
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/personal-blog-template/issues?q=is%3Aopen+is%3Aissue">
+        <img alt="GitHub issues" src="https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/personal-blog-template?&style=for-the-badge">
+    </a>
+</p>
 
 A template for a blog, and portfolio.
 
