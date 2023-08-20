@@ -1,14 +1,14 @@
-import { Layout } from "@/components/AppLayout";
-import { PostTags } from "@/components/PostTags";
-import Posts from "@/components/Posts";
-import Title from "@/components/Title";
-import { Post } from "@/lib/posts";
-import { getAllTags, postsByTag } from "@/pages/api/posts/tags/[tag]";
 import { Flex, Stack } from "@mantine/core";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
 import { Note, Tag } from "phosphor-react";
 import { ReactNode } from "react";
+import { Layout } from "../../components/AppLayout";
+import { PostTags } from "../../components/PostTags";
+import Posts from "../../components/Posts";
+import Title from "../../components/Title";
+import { Post } from "../../lib/posts";
+import { getAllTags, postsByTag } from "../api/posts/tags/[tag]";
 
 type DateProps = {
   dateString: string;

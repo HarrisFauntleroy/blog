@@ -1,6 +1,6 @@
-import { Layout } from "@/components/AppLayout";
-import { PostTags } from "@/components/PostTags";
-import { getAllTags } from "@/pages/api/posts/tags/[tag]";
+import { Layout } from "../../../components/AppLayout";
+import { PostTags } from "../../../components/PostTags";
+import { getAllTags } from "../../../pages/api/posts/tags/[tag]";
 
 type HomeProps = { tags: string[] };
 

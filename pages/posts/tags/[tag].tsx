@@ -1,8 +1,8 @@
-import { Layout } from "@/components/AppLayout";
-import Posts from "@/components/Posts";
-import { Post } from "@/lib/posts";
-import { getAllTags, postsByTag } from "@/pages/api/posts/tags/[tag]";
 import Head from "next/head";
+import { Layout } from "../../../components/AppLayout";
+import Posts from "../../../components/Posts";
+import { Post } from "../../../lib/posts";
+import { getAllTags, postsByTag } from "../../api/posts/tags/[tag]";
 
 type TagPageProps = {
   posts: Post[];

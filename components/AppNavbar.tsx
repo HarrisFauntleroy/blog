@@ -1,8 +1,8 @@
 import { Divider, List, Navbar } from "@mantine/core";
 
-import Title from "@/components/Title";
 import Link from "next/link";
 import { FloppyDisk, LinkSimple, Note } from "phosphor-react";
+import Title from "../components/Title";
 
 type AppNavbarProps = {
   opened: boolean;

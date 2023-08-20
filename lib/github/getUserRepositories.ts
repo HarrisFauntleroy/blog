@@ -1,4 +1,4 @@
-import { splitRepositories } from "@/components/UserRepositories";
+import { splitRepositories } from "../../components/UserRepositories";
 import graphQLClient from "./client";
 import GraphQLRequestError from "./errors/GraphQLRequestError";
 import paginateRequest from "./helpers/paginateRequest";

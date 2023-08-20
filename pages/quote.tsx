@@ -1,6 +1,6 @@
-import { Layout as MainLayout } from "@/components/AppLayout";
-import { useDailyQuote } from "@/hooks/useDailyQuote";
 import { Blockquote, Flex } from "@mantine/core";
+import { Layout as MainLayout } from "../components/AppLayout";
+import { useDailyQuote } from "../hooks/useDailyQuote";
 
 const Quote = () => {
   const dailyQuote = useDailyQuote();

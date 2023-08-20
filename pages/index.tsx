@@ -1,11 +1,11 @@
-import { Layout as MainLayout } from "@/components/AppLayout";
-import Posts from "@/components/Posts";
-import Title from "@/components/Title";
-import { useDailyQuote } from "@/hooks/useDailyQuote";
-import { Post } from "@/lib/posts";
 import { Blockquote, Flex, Spoiler, Stack, Text } from "@mantine/core";
 import Link from "next/link";
 import { Notepad } from "phosphor-react";
+import { Layout as MainLayout } from "../components/AppLayout";
+import Posts from "../components/Posts";
+import Title from "../components/Title";
+import { useDailyQuote } from "../hooks/useDailyQuote";
+import { Post } from "../lib/posts";
 import { getAllPosts } from "./api/posts/tags/[tag]";
 
 type Props = {

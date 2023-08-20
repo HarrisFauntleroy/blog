@@ -1,10 +1,10 @@
-import { Layout } from "@/components/AppLayout";
-import { PostTags } from "@/components/PostTags";
-import { Date } from "@/pages/posts";
 import { Stack, Text, Title, useMantineColorScheme } from "@mantine/core";
 import dynamic from "next/dynamic";
 import { useEffect } from "react";
+import { Layout } from "../../components/AppLayout";
+import { PostTags } from "../../components/PostTags";
 import { Post as PostType, getAllPostIds, getPostData } from "../../lib/posts";
+import { Date } from "../../pages/posts";
 import utilStyles from "../styles.module.scss";
 
 const Markdown = dynamic(

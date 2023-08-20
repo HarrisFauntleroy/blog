@@ -1,5 +1,5 @@
-import { getSortedPostsData } from "@/lib/posts";
 import { NextApiRequest, NextApiResponse } from "next";
+import { getSortedPostsData } from "../../../../lib/posts";
 
 type PostsByTagOptions = { tag?: string; limit?: number };
 

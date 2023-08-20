@@ -1,10 +1,4 @@
 import {
-  Commit,
-  PushEvent,
-  Repository,
-  SortedRepositories,
-} from "@/lib/github/types";
-import {
   Badge,
   Card,
   Flex,
@@ -20,6 +14,12 @@ import Image from "next/image";
 import NextLink from "next/link";
 import { GithubLogo, Link } from "phosphor-react";
 import { useEffect, useState } from "react";
+import {
+  Commit,
+  PushEvent,
+  Repository,
+  SortedRepositories,
+} from "../lib/github/types";
 import { Commits } from "./Commit";
 import Languages from "./Languages";
 
