@@ -1,8 +1,7 @@
-import { Divider, List, Navbar } from "@mantine/core";
+import { Divider, NavLink, Navbar } from "@mantine/core";
 
 import Link from "next/link";
-import { FloppyDisk, LinkSimple, Note } from "phosphor-react";
-import Title from "../components/Title";
+import { FloppyDisk, Note } from "phosphor-react";
 
 type AppNavbarProps = {
   opened: boolean;
@@ -24,20 +23,21 @@ export function AppNavbar({ opened }: AppNavbarProps) {
 
   return (
     <Navbar
-      p="md"
+      p="8px"
       hiddenBreakpoint="sm"
       hidden={!opened}
       width={{ sm: 200, lg: 300 }}
     >
-      <List>
-        <Title label="Links" icon={<LinkSimple />} />
-        <Divider my="4px" color="transparent" />
-        {links.map((link) => (
-          <Link key={link.title} href={link.href}>
-            <List.Item icon={link?.icon}>{link.title}</List.Item>
-          </Link>
-        ))}
-      </List>
+      <Divider my="4px" color="transparent" />
+      {links.map((link) => (
+        <NavLink
+          component={Link}
+          key={link.title}
+          href={link.href}
+          icon={link?.icon}
+          label={link.title}
+        />
+      ))}
     </Navbar>
   );
 }
