@@ -73,6 +73,28 @@ pnpm run dev
 
 _Please refer to the package.json for additional details and scripts._
 
+## Trunk-Based Development and Git Hooks
+
+This repository adopts a **Trunk-Based Development** approach to encourage:
+
+- Short-lived branches or direct trunk modifications
+- Frequent merges
+- High collaboration among developers
+
+### Automated Git Hooks
+
+To maintain code quality, we've set up automated Git hooks that perform the
+following tasks before any `git push` operation:
+
+- **Linting**: Enforces a consistent code style across the codebase.
+- **Formatting**: Applies standardized code formatting.
+- **Testing**: Executes all unit tests to catch regressions and errors at an
+  early stage.
+- **Building**: Compiles the code and bundles all assets to ensure everything is
+  set up correctly.
+
+This automation helps keep our codebase clean, stable, and error-free.
+
 ## Contributing 🤝
 
 If you'd like to contribute, please see our

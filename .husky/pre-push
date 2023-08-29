@@ -1,15 +1,26 @@
 #!/bin/sh
+set -e
 . "$(dirname "$0")/_/husky.sh"
 
-echo "This is a trunk based development branch"
-echo "Therefore tests, linting and build must pass before pushing"
+echo "🌳 This is a Trunk-Based Development branch."
+echo "🔒 Therefore, tests, linting, and build must pass before pushing."
 echo
-echo "======== Testing 🧪  ========"
-pnpm test
-echo "======== Testing ✅  ========"
+
+echo "======== Starting Tests 🧪  ========"
+if pnpm test; then
+    echo "======== Tests Completed Successfully ✅  ========"
+else
+    echo "❌ Tests Failed"
+    exit 1
+fi
+
 echo
-echo "======== Building 🏗️ ========"
-pnpm build
-echo "======== Building ✅ ========"
-echo
-echo "Tested ✅ Built ✅ Pushed 🚀"
+echo "======== Starting Build 🏗️  ========"
+if pnpm build; then
+    echo "======== Build Completed Successfully ✅  ========"
+    echo
+    echo "Test ✅ Build ✅ Pushed 🚀"
+else
+    echo "❌ Build Failed"
+    exit 1
+fi

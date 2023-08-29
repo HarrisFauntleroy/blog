@@ -1,6 +1,13 @@
 #!/bin/sh
+set -e
 . "$(dirname "$0")/_/husky.sh"
 
-echo "======== Lint Staged 🔬  ========"
-pnpm lint-staged
-echo "======== Lint Staged ✅  ========"
+echo "======== Starting Lint-Staged 🧐  ========"
+if pnpm lint-staged; then
+    echo "======== Lint-Staged Completed Successfully ✅  ========"
+    echo
+    echo "Format ✅ Lint ✅ Commit ✅"
+else
+    echo "❌ Lint-Staged Failed"
+    exit 1
+fi
