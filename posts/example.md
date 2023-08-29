@@ -1,6 +1,7 @@
 ---
 title: "Example Blog Post"
 date: "2023-08-01"
+image: "/posts/omega.png"
 published: true
 description: "Example blog post, nothing to see here."
 tags:
@@ -16,6 +17,8 @@ tags:
   - "lists"
   - "tables"
 ---
+
+![](omega.png)
 
 # Table of Contents
 

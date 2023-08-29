@@ -1,11 +1,28 @@
-import { Card, List, SimpleGrid, Text, Title } from "@mantine/core";
+import {
+  Card,
+  Flex,
+  Image,
+  List,
+  SimpleGrid,
+  Text,
+  Title,
+} from "@mantine/core";
 import Link from "next/link";
 import { Post } from "../lib/posts";
-import { Date } from "../pages/posts";
+import { Date } from "./Date";
 
-type PostsProps = { posts: Post[] };
+type PostsProps = {
+  posts: Post[];
+  filterByTag?: string;
+};
 
-export default function Posts({ posts }: PostsProps) {
+export default function Posts({ posts, filterByTag }: PostsProps) {
+  const filtered = posts.filter((post) => {
+    if (filterByTag) {
+      return post.tags.includes(filterByTag.toLowerCase());
+    }
+    return true;
+  });
   return (
     <SimpleGrid
       breakpoints={[
@@ -15,42 +32,42 @@ export default function Posts({ posts }: PostsProps) {
         { minWidth: "xl", cols: 4 },
       ]}
     >
-      {posts?.map(({ id, date, title, description }) => (
+      {filtered?.map(({ id, date, title, description, image }) => (
         <Card
           shadow="sm"
           radius="md"
           withBorder
           component={Link}
+          display="flex"
           href={`/posts/${id}`}
           style={{ textTransform: "capitalize" }}
           key={id}
         >
-          {/* {image && (
-            <Card.Section>
-              <Image
-                src={image}
-                height={"auto"}
-                width={"100%"}
-                style={{ aspectRatio: "16/9" }}
-                alt={title}
-              />
-            </Card.Section>
-          )} */}
-          <List listStyleType="none">
-            <List.Item>
-              <Title order={6}> {title}</Title>
-            </List.Item>
-            <List.Item>
-              <small>
-                <Date dateString={date} />
-              </small>
-            </List.Item>
-            <List.Item>
-              <Text lineClamp={2} size="sm">
-                {description}
-              </Text>
-            </List.Item>
-          </List>
+          <Flex gap="16px" align="center" style={{ flex: 1 }}>
+            <Image
+              width={80}
+              height={80}
+              radius="md"
+              src={image}
+              alt={title}
+              withPlaceholder
+            />
+            <List listStyleType="none">
+              <List.Item>
+                <Title order={6}>{title}</Title>
+              </List.Item>
+              <List.Item>
+                <small>
+                  <Date dateString={date} />
+                </small>
+              </List.Item>
+              <List.Item>
+                <Text lineClamp={2} size="sm">
+                  {description}
+                </Text>
+              </List.Item>
+            </List>
+          </Flex>
         </Card>
       ))}
     </SimpleGrid>

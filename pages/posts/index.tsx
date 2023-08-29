@@ -7,6 +7,7 @@ import { Layout } from "../../components/AppLayout";
 import { PostTags } from "../../components/PostTags";
 import Posts from "../../components/Posts";
 import Title from "../../components/Title";
+import generateRssFeed from "../../lib/generateRSSFeed";
 import { Post } from "../../lib/posts";
 import { getAllTags, postsByTag } from "../api/posts/tags/[tag]";
 
@@ -50,6 +51,9 @@ export default function PostsPage({ tags, posts }: PostsProps) {
 export async function getStaticProps() {
   const posts = postsByTag();
   const tags = getAllTags(16);
+
+  await generateRssFeed();
+
   return {
     props: {
       posts,

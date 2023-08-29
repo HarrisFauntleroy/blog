@@ -1,5 +1,6 @@
+/* eslint-disable security/detect-non-literal-fs-filename */
 import matter, { GrayMatterFile } from "gray-matter";
-import fs, { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 
 export type Post = {
@@ -8,12 +9,12 @@ export type Post = {
   published: boolean;
   date: string;
   lastUpdated: Date;
+  content: string;
   tags: string[];
   hidden?: boolean;
   description?: string;
   authors?: string[];
   image?: string;
-  content: string;
 };
 
 type BuildPost = (matterResult: GrayMatterFile<string>, id?: string) => Post;
@@ -39,13 +40,12 @@ const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getSortedPostsData() {
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = readdirSync(postsDirectory);
   const allPostsData: Post[] = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
     // Read markdown file as string
     const fullPath = path.join(postsDirectory, fileName);
-    // eslint-disable-next-line security/detect-non-literal-fs-filename
     const fileContents = readFileSync(fullPath, "utf8");
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
@@ -60,8 +60,63 @@ export function getSortedPostsData() {
   });
 }
 
+interface GetAllPostsOptions {
+  tag?: string;
+  hidden?: boolean;
+  published?: boolean;
+  limit?: number;
+}
+
+export function getAllPosts(options?: GetAllPostsOptions) {
+  const tag = options?.tag;
+  // Get file names under /posts
+  const fileNames = readdirSync(postsDirectory);
+  const allPosts: Post[] = fileNames.map((fileName: string) => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, "");
+
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = readFileSync(fullPath, "utf8");
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents);
+    return buildPost(matterResult, id);
+  });
+
+  if (tag) {
+    const filteredPosts = allPosts.filter(
+      (post) =>
+        post.tags?.some((t: string) =>
+          t.toLowerCase().includes(tag.toLowerCase())
+        ) &&
+        post?.hidden === options?.hidden &&
+        post?.published === options?.published
+    );
+    return options?.limit
+      ? filteredPosts.slice(0, options.limit)
+      : filteredPosts;
+  }
+
+  const filteredPosts = allPosts.filter(
+    (post) =>
+      post.hidden === options?.hidden && post.published === options?.published
+  );
+  return options?.limit ? filteredPosts.slice(0, options.limit) : filteredPosts;
+}
+
+export function sortPostsByDate(): Post[] {
+  const allPostsPublishedNotHidden = getAllPosts({
+    published: true,
+    hidden: false,
+  });
+  return allPostsPublishedNotHidden.sort((a, b) => {
+    return a.date < b.date ? 1 : -1;
+  });
+}
+
 export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = readdirSync(postsDirectory);
   return fileNames.map((fileName) => {
     return {
       params: {
@@ -73,7 +128,7 @@ export function getAllPostIds() {
 
 export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const fileContents = readFileSync(fullPath, "utf8");
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
   return buildPost(matterResult, id);

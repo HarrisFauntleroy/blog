@@ -31,10 +31,26 @@ A template for a blog, and portfolio.
 
 ## Table of Contents 📖
 
+1. [Features](#features-✨)
 2. [Local Development](#local-development-🛠️)
 3. [Contributing](#contributing-🤝)
 4. [License](#license-⚖️)
 5. [Disclaimer](#disclaimer-🚨)
+
+## Features ✨
+
+- **📝 Markdown Support**: Write and edit posts easily.
+- **📡 RSS Feed**: Keep readers updated automatically.
+- **🔒 NextAuth**: Secure, simple logins.
+- **🗺️ Sitemap Generation**: Auto-generate for better SEO.
+- **🔍 SEO**: Built-in search engine optimization features.
+- **🌗 Dark Mode**: Toggle between light and dark mode.
+- **🧩 Modular**: Easy to extend.
+- **📱 Responsive**: Works on all devices.
+- **🎨 Theming**: Simple UI customization.
+- **💬 Comments**: In progress. 🚧
+- **📊 Analytics**: In progress. 🚧
+- **👩‍💼 Admin Panel**: In progress. 🚧
 
 ## Local Development 🛠️
 

@@ -1,6 +1,6 @@
 {
   "name": "personal-blog-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "prebuild": "prisma generate",
@@ -192,6 +192,7 @@
     "postcss": "8.4.27",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rss": "^1.2.2",
     "sass": "^1.64.2",
     "storybook": "^7.0.4",
     "typescript": "5.1.6"
@@ -210,6 +211,7 @@
     "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.0",
     "@types/jest": "^29.5.2",
+    "@types/rss": "^0.0.30",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "chromatic": "^6.21.0",

@@ -1,7 +1,7 @@
 import { Divider, NavLink, Navbar } from "@mantine/core";
 
 import Link from "next/link";
-import { FloppyDisk, Note } from "phosphor-react";
+import { Notepad, Rss } from "phosphor-react";
 
 type AppNavbarProps = {
   opened: boolean;
@@ -12,12 +12,12 @@ export function AppNavbar({ opened }: AppNavbarProps) {
     {
       title: "Posts",
       href: "/posts",
-      icon: <Note />,
+      icon: <Notepad />,
     },
     {
-      title: "Software",
-      href: "/software",
-      icon: <FloppyDisk />,
+      title: "RSS",
+      href: "/rss.xml",
+      icon: <Rss />,
     },
   ];
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Blog posts | RSS Feed]]></title>
+        <description><![CDATA[Personal blog template]]></description>
+        <link>localhost:3000</link>
+        <image>
+            <url>localhost:3000/logo.png</url>
+            <title>Blog posts | RSS Feed</title>
+            <link>localhost:3000</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 29 Aug 2023 08:50:50 GMT</lastBuildDate>
+        <atom:link href="localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Invalid Date</pubDate>
+        <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
+        <item>
+            <title><![CDATA[Example Blog Post]]></title>
+            <description><![CDATA[Example blog post, nothing to see here.]]></description>
+            <link>localhost:3000/posts/example</link>
+            <guid isPermaLink="true">localhost:3000/posts/example</guid>
+            <pubDate>Tue, 01 Aug 2023 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
