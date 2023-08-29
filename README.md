@@ -39,7 +39,10 @@ A template for a blog, and portfolio.
 
 ## Features ✨
 
-- **📝 Markdown Support**: Write and edit posts easily.
+- **📝 Markdown**: with support for
+  [GitHub Flavored Markdown](https://github.github.com/gfm/),
+  [Katex](https://katex.org/),
+  [Mermaid](https://mermaid-js.github.io/mermaid/#/), and more.
 - **📡 RSS Feed**: Keep readers updated automatically.
 - **🔒 NextAuth**: Secure, simple logins.
 - **🗺️ Sitemap Generation**: Auto-generate for better SEO.
