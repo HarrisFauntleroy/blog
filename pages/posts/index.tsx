@@ -52,7 +52,7 @@ export async function getStaticProps() {
   const posts = postsByTag();
   const tags = getAllTags(16);
 
-  if (process.env.NODE_ENV !== "development") await generateRssFeed();
+  if (process.env.NEXT_PUBLIC_GENERATE_RSS) await generateRssFeed();
 
   return {
     props: {
