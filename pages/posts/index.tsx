@@ -51,8 +51,11 @@ export default function PostsPage({ tags, posts }: PostsProps) {
 export async function getStaticProps() {
   const posts = postsByTag();
   const tags = getAllTags(16);
+  const generateRSSFeed = process.env.NEXT_PUBLIC_GENERATE_RSS === "true";
 
-  if (process.env.NEXT_PUBLIC_GENERATE_RSS) await generateRssFeed();
+  if (generateRSSFeed) {
+    await generateRssFeed();
+  }
 
   return {
     props: {
