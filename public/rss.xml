@@ -2,22 +2,22 @@
     <channel>
         <title><![CDATA[Blog posts | RSS Feed]]></title>
         <description><![CDATA[Personal blog template]]></description>
-        <link>localhost:3000</link>
+        <link>https://personal-blog-template-lac.vercel.app</link>
         <image>
-            <url>localhost:3000/logo.png</url>
+            <url>https://personal-blog-template-lac.vercel.app/logo.png</url>
             <title>Blog posts | RSS Feed</title>
-            <link>localhost:3000</link>
+            <link>https://personal-blog-template-lac.vercel.app</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 29 Aug 2023 08:50:50 GMT</lastBuildDate>
-        <atom:link href="localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 29 Aug 2023 08:56:09 GMT</lastBuildDate>
+        <atom:link href="https://personal-blog-template-lac.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
         <pubDate>Invalid Date</pubDate>
         <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
         <item>
             <title><![CDATA[Example Blog Post]]></title>
             <description><![CDATA[Example blog post, nothing to see here.]]></description>
-            <link>localhost:3000/posts/example</link>
-            <guid isPermaLink="true">localhost:3000/posts/example</guid>
+            <link>https://personal-blog-template-lac.vercel.app/posts/example</link>
+            <guid isPermaLink="true">https://personal-blog-template-lac.vercel.app/posts/example</guid>
             <pubDate>Tue, 01 Aug 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
