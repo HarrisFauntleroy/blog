@@ -8,7 +8,8 @@ import { useRouter } from "next/router";
 
 export default function Breadcrumbs() {
   const router = useRouter();
-  const pathArray = router.asPath.split("/").filter((item) => item);
+  const trimmedPath = router.asPath.split("?")[0];
+  const pathArray = trimmedPath.split("/").filter((item) => item);
   const currentPath = router.asPath;
 
   return (
@@ -26,6 +27,7 @@ export default function Breadcrumbs() {
         </Tooltip>
         {pathArray?.map((item, index) => {
           const path = `/${pathArray.slice(0, index + 1).join("/")}`;
+
           return currentPath === path ? (
             <Text key={index}>{item}</Text>
           ) : (
