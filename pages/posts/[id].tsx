@@ -2,6 +2,7 @@ import { Stack, Text, Title, useMantineColorScheme } from "@mantine/core";
 import dynamic from "next/dynamic";
 import { useEffect } from "react";
 import { Layout } from "../../components/AppLayout";
+import Comments from "../../components/Comments";
 import { PostTags } from "../../components/PostTags";
 import { Post as PostType, getAllPostIds, getPostData } from "../../lib/posts";
 import { Date } from "../../pages/posts";
@@ -45,6 +46,7 @@ export default function Post({ postData }: PostProps) {
           </Text>
           {postData?.tags && <PostTags tags={postData?.tags} />}
           <Markdown colorScheme={colorScheme} source={postData?.content} />
+          <Comments repo="HarrisFauntleroy/personal-blog-template" />
         </Stack>
       </article>
     </Layout>
