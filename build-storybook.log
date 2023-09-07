@@ -1,11 +1,11 @@
 @storybook/cli v7.2.2
 
-info => Cleaning outputDir: /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--87779-69mMMlcnTYKV
+info => Cleaning outputDir: /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--58113-2I1svd50KGaZ
 info => Loading presets
 info => Building manager..
-info => Manager built (204 ms)
+info => Manager built (145 ms)
 info => Compiling preview..
-info => Copying static files: /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/@storybook+manager@7.2.2/node_modules/@storybook/manager/static at /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--87779-69mMMlcnTYKV/sb-common-assets
+info => Copying static files: /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/@storybook+manager@7.2.2/node_modules/@storybook/manager/static at /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--58113-2I1svd50KGaZ/sb-common-assets
 WARN You (or an addon) are using the 'config' preset field. This has been replaced by 'previewAnnotations' and will be removed in 8.0
 info Addon-docs: using MDX2
 info => Using implicit CSS loaders
@@ -112,130 +112,270 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 9% setup compilation
 <s> [webpack.Progress] 10% building
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
+<s> [webpack.Progress] 10% building 0/1 entries 6/17 dependencies 2/5 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/.pnpm/babel-loader@9.1.3_@babel+core@7.22.10_webpack@5.88.2/node_modules/babel-loader/lib/index.js
-<s> [webpack.Progress] 10% building 0/1 entries 6/19 dependencies 2/6 modules
+<s> [webpack.Progress] 10% building 0/1 entries 7/17 dependencies 2/7 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/.pnpm/unplugin@1.4.0/node_modules/unplugin/dist/webpack/loaders/load.js
-<s> [webpack.Progress] 10% building 0/1 entries 12/19 dependencies 2/11 modules
-<s> [webpack.Progress] 10% building 0/1 entries 117/145 dependencies 15/74 modules
-<s> [webpack.Progress] 53% building 1/1 entries 145/183 dependencies 34/88 modules
+<s> [webpack.Progress] 10% building 0/1 entries 35/72 dependencies 8/26 modules
+<s> [webpack.Progress] 12% building 0/1 entries 1950/2000 dependencies 81/1513 modules
+<s> [webpack.Progress] 14% building 0/1 entries 4251/4300 dependencies 147/1664 modules
+<s> [webpack.Progress] 17% building 0/1 entries 6300/6337 dependencies 293/2031 modules
+<s> [webpack.Progress] 56% building 0/1 entries 7700/7791 dependencies 1924/2296 modules
+<s> [webpack.Progress] 65% building 1/1 entries 9014/9014 dependencies 2605/2605 modules
+<s> [webpack.Progress] 65% building
+<s> [webpack.Progress] 69% building finish
+<s> [webpack.Progress] 69% building finish
+<s> [webpack.Progress] 70% sealing finish module graph
+<s> [webpack.Progress] 70% sealing finish module graph ResolverCachePlugin
+<s> [webpack.Progress] 70% sealing finish module graph InferAsyncModulesPlugin
+<s> [webpack.Progress] 70% sealing finish module graph FlagDependencyExportsPlugin
+<s> [webpack.Progress] 70% sealing finish module graph InnerGraphPlugin
+<s> [webpack.Progress] 70% sealing finish module graph WasmFinalizeExportsPlugin
+<s> [webpack.Progress] 70% sealing finish module graph
+<s> [webpack.Progress] 70% sealing plugins
+<s> [webpack.Progress] 70% sealing plugins DocGenPlugin
+<s> [webpack.Progress] 70% sealing plugins WarnCaseSensitiveModulesPlugin
+<s> [webpack.Progress] 70% sealing plugins
+<s> [webpack.Progress] 71% sealing dependencies optimization
+<s> [webpack.Progress] 71% sealing dependencies optimization SideEffectsFlagPlugin
+<s> [webpack.Progress] 71% sealing dependencies optimization FlagDependencyUsagePlugin
+<s> [webpack.Progress] 71% sealing dependencies optimization
+<s> [webpack.Progress] 71% sealing after dependencies optimization
+<s> [webpack.Progress] 71% sealing after dependencies optimization
+<s> [webpack.Progress] 72% sealing chunk graph
+<s> [webpack.Progress] 72% sealing chunk graph
+<s> [webpack.Progress] 73% sealing after chunk graph
+<s> [webpack.Progress] 73% sealing after chunk graph
+<s> [webpack.Progress] 73% sealing optimizing
+<s> [webpack.Progress] 73% sealing optimizing
+<s> [webpack.Progress] 74% sealing module optimization
+<s> [webpack.Progress] 74% sealing module optimization
+<s> [webpack.Progress] 75% sealing after module optimization
+<s> [webpack.Progress] 75% sealing after module optimization
+<s> [webpack.Progress] 75% sealing chunk optimization
+<s> [webpack.Progress] 75% sealing chunk optimization EnsureChunkConditionsPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization MergeDuplicateChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization SplitChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization
+<s> [webpack.Progress] 76% sealing after chunk optimization
+<s> [webpack.Progress] 76% sealing after chunk optimization
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization PersistentChildCompilerSingletonPlugin
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+<s> [webpack.Progress] 78% sealing chunk modules optimization
+<s> [webpack.Progress] 78% sealing chunk modules optimization ModuleConcatenationPlugin
+<s> [webpack.Progress] 78% sealing chunk modules optimization
+<s> [webpack.Progress] 78% sealing after chunk modules optimization
+<s> [webpack.Progress] 78% sealing after chunk modules optimization
+<s> [webpack.Progress] 79% sealing module reviving
+<s> [webpack.Progress] 79% sealing module reviving RecordIdsPlugin
+<s> [webpack.Progress] 79% sealing module reviving
+<s> [webpack.Progress] 80% sealing before module ids
+<s> [webpack.Progress] 80% sealing before module ids
+<s> [webpack.Progress] 80% sealing module ids
+<s> [webpack.Progress] 80% sealing module ids NamedModuleIdsPlugin
+<s> [webpack.Progress] 80% sealing module ids
+<s> [webpack.Progress] 81% sealing module id optimization
+<s> [webpack.Progress] 81% sealing module id optimization
+<s> [webpack.Progress] 82% sealing module id optimization
+<s> [webpack.Progress] 82% sealing module id optimization
+<s> [webpack.Progress] 82% sealing chunk reviving
+<s> [webpack.Progress] 82% sealing chunk reviving RecordIdsPlugin
+<s> [webpack.Progress] 82% sealing chunk reviving
+<s> [webpack.Progress] 83% sealing before chunk ids
+<s> [webpack.Progress] 83% sealing before chunk ids
+<s> [webpack.Progress] 84% sealing chunk ids
+<s> [webpack.Progress] 84% sealing chunk ids DeterministicChunkIdsPlugin
+<s> [webpack.Progress] 84% sealing chunk ids
+<s> [webpack.Progress] 84% sealing chunk id optimization
+<s> [webpack.Progress] 84% sealing chunk id optimization FlagIncludedChunksPlugin
+<s> [webpack.Progress] 84% sealing chunk id optimization
+<s> [webpack.Progress] 85% sealing after chunk id optimization
+<s> [webpack.Progress] 85% sealing after chunk id optimization
+<s> [webpack.Progress] 86% sealing record modules
+<s> [webpack.Progress] 86% sealing record modules RecordIdsPlugin
+<s> [webpack.Progress] 86% sealing record modules
+<s> [webpack.Progress] 86% sealing record chunks
+<s> [webpack.Progress] 86% sealing record chunks RecordIdsPlugin
+<s> [webpack.Progress] 86% sealing record chunks
+<s> [webpack.Progress] 87% sealing module hashing
+<s> [webpack.Progress] 87% sealing module hashing
+<s> [webpack.Progress] 87% sealing code generation
+<s> [webpack.Progress] 87% sealing code generation
+<s> [webpack.Progress] 88% sealing runtime requirements
+<s> [webpack.Progress] 88% sealing runtime requirements
+<s> [webpack.Progress] 89% sealing hashing
+<s> [webpack.Progress] 89% sealing hashing
+<s> [webpack.Progress] 89% sealing after hashing
+<s> [webpack.Progress] 89% sealing after hashing
+<s> [webpack.Progress] 90% sealing record hash
+<s> [webpack.Progress] 90% sealing record hash
+<s> [webpack.Progress] 91% sealing module assets processing
+<s> [webpack.Progress] 91% sealing module assets processing
+<s> [webpack.Progress] 91% sealing chunk assets processing
+<s> [webpack.Progress] 91% sealing chunk assets processing
+<s> [webpack.Progress] 92% sealing asset processing
+<s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
+<s> [webpack.Progress] 92% sealing asset processing TerserPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9e227e28.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9e227e28.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.014eed7e.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.014eed7e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin stories-Homepage-stories.8a2222c3.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin stories-Homepage-stories.8a2222c3.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 327.c527ec6f.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 327.c527ec6f.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 543.2b752924.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 543.2b752924.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 857.91fd4d7b.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 857.91fd4d7b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 700.1759ef4a.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 700.1759ef4a.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 607.723a4220.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 607.723a4220.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 612.4d6d0570.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 612.4d6d0570.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 528.e591304d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 528.e591304d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 710.4384c202.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 710.4384c202.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 649.8d2384c9.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 649.8d2384c9.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 994.419c8178.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 994.419c8178.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 354.7b665660.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 354.7b665660.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 302.3388654d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 302.3388654d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 67.18165cf8.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 67.18165cf8.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 941.34bf916f.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 941.34bf916f.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 901.103f795e.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 901.103f795e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 986.fde45bd0.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 986.fde45bd0.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 927.a480e9e4.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 927.a480e9e4.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 751.59e4116a.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 751.59e4116a.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 182.444dcff7.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 182.444dcff7.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 171.de8dee95.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 171.de8dee95.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 462.70a698a6.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 462.70a698a6.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 890.37ac0a74.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 890.37ac0a74.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 327.c527ec6f.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 327.c527ec6f.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 607.723a4220.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 607.723a4220.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 890.37ac0a74.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 890.37ac0a74.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.2afdcd5a.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.2afdcd5a.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.9de2e501.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.9de2e501.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin stories-Homepage-stories.0ad76d34.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin stories-Homepage-stories.0ad76d34.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 543.d7157f04.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 543.d7157f04.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 857.023bfd4c.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 857.023bfd4c.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 700.7abf141c.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 700.7abf141c.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 612.c9f956ef.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 612.c9f956ef.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 528.9e0c641d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 528.9e0c641d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 710.cbb1c829.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 710.cbb1c829.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 649.5d7baa6e.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 649.5d7baa6e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 994.265e9549.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 994.265e9549.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 354.1e0e7c41.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 354.1e0e7c41.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 302.0c6c7c7a.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 302.0c6c7c7a.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 67.59cbaeba.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 67.59cbaeba.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 941.bc75583d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 941.bc75583d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 901.97036fa3.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 901.97036fa3.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 986.48b51990.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 986.48b51990.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 927.e49d8469.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 927.e49d8469.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 751.7105de3d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 751.7105de3d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 182.4188ac5c.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 182.4188ac5c.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 171.db41564d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 171.db41564d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 462.0787f1a7.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 462.0787f1a7.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 98% emitting after emit SizeLimitsPlugin
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% done plugins CaseSensitivePathsPlugin
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% 
+
+<s> [webpack.Progress] 99% cache store build dependencies
+<s> [webpack.Progress] 99% cache store build dependencies
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-ERR! => Failed to build the preview
-ERR! Module not found: Error: Can't resolve '@/components/AppLayout' in '/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/pages'
+info => Preview built (10 s)
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   327.4ec89bce.iframe.bundle.js (880 KiB)
+WARN   607.8dd474bf.iframe.bundle.js (583 KiB)
+WARN   462.0787f1a7.iframe.bundle.js (1010 KiB)
+WARN   890.4851b353.iframe.bundle.js (792 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (804 KiB)
+WARN       runtime~main.9de2e501.iframe.bundle.js
+WARN       890.4851b353.iframe.bundle.js
+WARN       main.2afdcd5a.iframe.bundle.js
+WARN 
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-ERR! ModuleNotFoundError: Module not found: Error: Can't resolve '@/components/AppLayout' in '/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/pages'
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/Compilation.js:2022:28
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:817:13
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:275:22
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:448:22
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:118:11
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:689:25
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:893:8
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:1013:5
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/neo-async@2.6.2/node_modules/neo-async/async.js:6883:13
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:996:45
-ERR!     at finishWithoutResolve (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:372:11)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:461:15
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:39:13
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:148:14
-ERR!     at next (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:35:3)
-ERR!     at forEachBail (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:49:9)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:61:5
-ERR!     at _next0 (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:8:1)
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:30:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
-ERR!     at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
-ERR!  ModuleNotFoundError: Module not found: Error: Can't resolve '@/components/AppLayout' in '/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/pages'
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/Compilation.js:2022:28
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:817:13
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:275:22
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:448:22
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:118:11
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:689:25
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:893:8
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:1013:5
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/neo-async@2.6.2/node_modules/neo-async/async.js:6883:13
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/webpack@5.88.2_@swc+core@1.3.76_esbuild@0.18.20/node_modules/webpack/lib/NormalModuleFactory.js:996:45
-ERR!     at finishWithoutResolve (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:372:11)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:461:15
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:39:13
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:148:14
-ERR!     at next (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:35:3)
-ERR!     at forEachBail (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/forEachBail.js:49:9)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/AliasPlugin.js:61:5
-ERR!     at _next0 (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:8:1)
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:30:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/Resolver.js:519:5
-ERR!     at eval (eval at create (/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/tapable@2.2.1/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
-ERR!     at /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/enhanced-resolve@5.15.0/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
-ERR!     at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
-ERR! resolve '@/components/AppLayout' in '/Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/pages'
-ERR!   Parsed request is a module
-ERR!   using description file: /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/package.json (relative path: ./pages)
-ERR!     Field 'browser' doesn't contain a valid alias configuration
-ERR!     resolve as module
-ERR!       /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/pages/node_modules doesn't exist or is not a directory
-ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules
-ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/@/components doesn't exist
-ERR!       /Users/harrisfauntleroy/Documents/code/personal/node_modules doesn't exist or is not a directory
-ERR!       /Users/harrisfauntleroy/Documents/code/node_modules doesn't exist or is not a directory
-ERR!       /Users/harrisfauntleroy/Documents/node_modules doesn't exist or is not a directory
-ERR!       /Users/harrisfauntleroy/node_modules doesn't exist or is not a directory
-ERR!       /Users/node_modules doesn't exist or is not a directory
-ERR!       /node_modules doesn't exist or is not a directory
-ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/storybook@7.2.2/node_modules/storybook/node_modules
-ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/storybook@7.2.2/node_modules/storybook/node_modules/@/components doesn't exist
-ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/storybook@7.2.2/node_modules
-ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/storybook@7.2.2/node_modules/@/components doesn't exist
-ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/node_modules
-ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/node_modules/@/components doesn't exist
-ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules/chromatic/dist/node_modules
-ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules/chromatic/dist/node_modules/@/components doesn't exist
-ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules/chromatic/node_modules
-ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules/chromatic/node_modules/@/components doesn't exist
-ERR!       looking for modules in /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules
-ERR!         /Users/harrisfauntleroy/Documents/code/personal/personal-blog-template/node_modules/.pnpm/chromatic@6.21.0/node_modules/@/components doesn't exist
-[?25l[2K[1G[36m?[39m [1mWould you like to help improve Storybook by sending anonymous crash reports?[22m [90m›[39m [90m(Y/n)[39m
+info => Output directory: /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--58113-2I1svd50KGaZ

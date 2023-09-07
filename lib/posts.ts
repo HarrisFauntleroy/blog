@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-non-literal-fs-filename */
+import { readFileSync, readdirSync } from "fs";
 import matter, { GrayMatterFile } from "gray-matter";
-import { readFileSync, readdirSync } from "node:fs";
-import path from "node:path";
+import path from "path";
 
 export type Post = {
   id: string;
