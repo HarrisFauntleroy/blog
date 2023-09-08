@@ -144,7 +144,7 @@
     "@auth/core": "^0.11.1",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
-    "@harrisfauntleroy/design-system": "^2.1.4",
+    "@harrisfauntleroy/design-system": "^2.1.9",
     "@mantine/carousel": "^6.0.17",
     "@mantine/core": "^6.0.17",
     "@mantine/dates": "^6.0.17",

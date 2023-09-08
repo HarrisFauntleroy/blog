@@ -45,7 +45,7 @@ export default function Post({ postData }: PostProps) {
             />
           </Text>
           {postData?.tags && <PostTags tags={postData?.tags} />}
-          <Markdown colorScheme={colorScheme} source={postData?.content} />
+          <Markdown colorScheme={colorScheme} value={postData?.content} />
           <Comments repo="HarrisFauntleroy/personal-blog-template" />
         </Stack>
       </article>
