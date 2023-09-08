@@ -1,4 +1,3 @@
-/* eslint-disable security/detect-non-literal-fs-filename */
 import { readFileSync, readdirSync } from "fs";
 import matter, { GrayMatterFile } from "gray-matter";
 import path from "path";
@@ -17,9 +16,10 @@ export type Post = {
   image?: string;
 };
 
-type BuildPost = (matterResult: GrayMatterFile<string>, id?: string) => Post;
-
-export const buildPost: BuildPost = (matterResult, id): Post => {
+export const buildPost = (
+  matterResult: GrayMatterFile<string>,
+  id?: string
+): Post => {
   return {
     ...matterResult.data,
     id: matterResult.data.id || id,
