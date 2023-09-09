@@ -98,7 +98,8 @@
       "plugin:jest/recommended"
     ],
     "rules": {
-      "unicorn/prefer-query-selector": "off",
+      "unicorn/prevent-abbreviations": "warn",
+      "unicorn/prefer-query-selector": "warn",
       "unicorn/filename-case": [
         "error",
         {
