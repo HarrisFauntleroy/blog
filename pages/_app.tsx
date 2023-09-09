@@ -6,12 +6,12 @@ import {
 } from "@mantine/core";
 import { useHotkeys } from "@mantine/hooks";
 import { getCookie, setCookie } from "cookies-next";
-import NextApp, { AppContext, AppProps as NextAppProps } from "next/app";
+import NextApp, { AppContext, AppProps as NextAppProperties } from "next/app";
 import { useState } from "react";
 
-type AppProps = NextAppProps & { colorScheme: ColorScheme };
+type AppProperties = NextAppProperties & { colorScheme: ColorScheme };
 
-function App(properties: AppProps) {
+function App(properties: AppProperties) {
   const { Component, pageProps } = properties;
 
   const [colorScheme, setColorScheme] = useState<ColorScheme>(
@@ -48,9 +48,9 @@ function App(properties: AppProps) {
 export default App;
 
 App.getInitialProps = async (appContext: AppContext) => {
-  const appProps = await NextApp.getInitialProps(appContext);
+  const appProperties = await NextApp.getInitialProps(appContext);
   return {
-    ...appProps,
+    ...appProperties,
     colorScheme: getCookie("mantine-color-scheme", appContext.ctx) || "dark",
   };
 };

@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 export default function Breadcrumbs() {
   const router = useRouter();
   const trimmedPath = router.asPath.split("?")[0];
-  const pathArray = trimmedPath.split("/").filter((item) => item);
+  const pathArray = trimmedPath.split("/").filter(Boolean);
   const currentPath = router.asPath;
 
   return (

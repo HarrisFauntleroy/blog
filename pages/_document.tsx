@@ -10,15 +10,15 @@ import Document, {
 const stylesServer = createStylesServer();
 
 export default class _Document extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx);
+  static async getInitialProps(context: DocumentContext) {
+    const initialProperties = await Document.getInitialProps(context);
 
     return {
-      ...initialProps,
+      ...initialProperties,
       styles: [
-        initialProps.styles,
+        initialProperties.styles,
         <ServerStyles
-          html={initialProps.html}
+          html={initialProperties.html}
           server={stylesServer}
           key="styles"
         />,

@@ -2,9 +2,9 @@ import { Layout } from "../../../components/AppLayout";
 import { PostTags } from "../../../components/PostTags";
 import { getAllTags } from "../../../pages/api/posts/tags/[tag]";
 
-type HomeProps = { tags: string[] };
+type HomeProperties = { tags: string[] };
 
-export default function Home({ tags }: HomeProps) {
+export default function Home({ tags }: HomeProperties) {
   return (
     <Layout>
       <PostTags tags={tags} />

@@ -7,16 +7,16 @@ import { Layout } from "../../components/AppLayout";
 import { PostTags } from "../../components/PostTags";
 import Posts from "../../components/Posts";
 import Title from "../../components/Title";
-import generateRssFeed from "../../lib/generateRSSFeed";
+import generateRssFeed from "../../lib/generateRssFeed";
 import { Post } from "../../lib/posts";
 import { getAllTags, postsByTag } from "../api/posts/tags/[tag]";
 
-type DateProps = {
+type DateProperties = {
   dateString: string;
   className?: string;
 };
 
-export function Date({ dateString, className }: DateProps) {
+export function Date({ dateString, className }: DateProperties) {
   const date = parseISO(dateString);
   return (
     <time className={className} dateTime={dateString}>
@@ -25,14 +25,14 @@ export function Date({ dateString, className }: DateProps) {
   );
 }
 
-type PostsProps = {
+type PostsProperties = {
   tags: string[];
   posts: Post[];
   home?: boolean;
   children?: ReactNode;
 };
 
-export default function PostsPage({ tags, posts }: PostsProps) {
+export default function PostsPage({ tags, posts }: PostsProperties) {
   return (
     <Layout>
       <Title label="Posts" icon={<Note />} />

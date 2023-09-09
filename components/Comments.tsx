@@ -1,11 +1,11 @@
 import { useMantineColorScheme } from "@mantine/core";
 import { useEffect } from "react";
 
-type CommentsProps = {
+type CommentsProperties = {
   repo: string;
 };
 
-function Comments({ repo }: CommentsProps) {
+function Comments({ repo }: CommentsProperties) {
   const COMMENT_NODE_ID = "comments";
   const { colorScheme } = useMantineColorScheme();
 
@@ -22,7 +22,7 @@ function Comments({ repo }: CommentsProps) {
     script.setAttribute("crossorigin", "anonymous");
 
     const comments = document.getElementById(COMMENT_NODE_ID);
-    if (comments) comments.appendChild(script);
+    if (comments) comments.append(script);
 
     return () => {
       const comments = document.getElementById(COMMENT_NODE_ID);

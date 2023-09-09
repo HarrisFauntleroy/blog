@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Hamburger, MoonStars, Sun } from "phosphor-react";
 import Breadcrumbs from "./Breadcrumb";
 
-type AppHeaderProps = {
+type AppHeaderProperties = {
   navigationHandlers?: {
     readonly open: () => void;
     readonly close: () => void;
@@ -17,7 +17,7 @@ type AppHeaderProps = {
   };
 };
 
-export function AppHeader({ navigationHandlers }: AppHeaderProps) {
+export function AppHeader({ navigationHandlers }: AppHeaderProperties) {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
   return (

@@ -8,11 +8,11 @@ import { useDailyQuote } from "../hooks/useDailyQuote";
 import { Post } from "../lib/posts";
 import { getAllPosts } from "./api/posts/tags/[tag]";
 
-type Props = {
+type Properties = {
   posts: Post[];
 };
 
-const Index = ({ posts }: Props) => {
+const Index = ({ posts }: Properties) => {
   const dailyQuote = useDailyQuote();
   return (
     <MainLayout home>

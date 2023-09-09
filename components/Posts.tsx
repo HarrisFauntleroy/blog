@@ -11,12 +11,12 @@ import Link from "next/link";
 import { Post } from "../lib/posts";
 import { Date } from "./Date";
 
-type PostsProps = {
+type PostsProperties = {
   posts: Post[];
   filterByTag?: string;
 };
 
-export default function Posts({ posts, filterByTag }: PostsProps) {
+export default function Posts({ posts, filterByTag }: PostsProperties) {
   const filtered = posts.filter((post) => {
     if (filterByTag) {
       return post.tags.includes(filterByTag.toLowerCase());

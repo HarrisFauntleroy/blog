@@ -1,9 +1,9 @@
 import { Badge, Group } from "@mantine/core";
 import Link from "next/link";
 
-type PostTagsProps = { tags?: string[] };
+type PostTagsProperties = { tags?: string[] };
 
-export const PostTags = ({ tags }: PostTagsProps) => (
+export const PostTags = ({ tags }: PostTagsProperties) => (
   <Group>
     {tags?.map((tag) => (
       <Link key={tag} href={`/posts/tags/${tag}`}>

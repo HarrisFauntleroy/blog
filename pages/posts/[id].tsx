@@ -14,11 +14,11 @@ const Markdown = dynamic(
   { ssr: false }
 );
 
-type PostProps = {
+type PostProperties = {
   postData: PostType;
 };
 
-export default function Post({ postData }: PostProps) {
+export default function Post({ postData }: PostProperties) {
   const { colorScheme } = useMantineColorScheme();
 
   useEffect(() => {
@@ -61,9 +61,9 @@ export async function getStaticPaths() {
   };
 }
 
-type GetStaticProps = { params: { id: string } };
+type GetStaticProperties = { params: { id: string } };
 
-export async function getStaticProps({ params }: GetStaticProps) {
+export async function getStaticProps({ params }: GetStaticProperties) {
   const postData = await getPostData(params.id);
   return {
     props: {

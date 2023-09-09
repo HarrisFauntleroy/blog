@@ -1,11 +1,11 @@
 import { format, parseISO } from "date-fns";
 
-type DateProps = {
+type DateProperties = {
   dateString: string;
   className?: string;
 };
 
-export function Date({ dateString, className }: DateProps) {
+export function Date({ dateString, className }: DateProperties) {
   const date = parseISO(dateString);
   return (
     <time className={className} dateTime={dateString}>

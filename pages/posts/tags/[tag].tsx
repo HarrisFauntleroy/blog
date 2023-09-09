@@ -4,12 +4,12 @@ import Posts from "../../../components/Posts";
 import { Post } from "../../../lib/posts";
 import { getAllTags, postsByTag } from "../../api/posts/tags/[tag]";
 
-type TagPageProps = {
+type TagPageProperties = {
   posts: Post[];
   tag: string;
 };
 
-export default function TagPage({ posts, tag }: TagPageProps) {
+export default function TagPage({ posts, tag }: TagPageProperties) {
   return (
     <Layout>
       <Head>
@@ -20,11 +20,11 @@ export default function TagPage({ posts, tag }: TagPageProps) {
   );
 }
 
-type GetStaticProps = {
+type GetStaticProperties = {
   params: { tag: string };
 };
 
-export async function getStaticProps({ params: { tag } }: GetStaticProps) {
+export async function getStaticProps({ params: { tag } }: GetStaticProperties) {
   const posts = postsByTag(tag);
   return {
     props: {

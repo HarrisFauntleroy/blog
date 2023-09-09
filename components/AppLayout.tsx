@@ -6,12 +6,12 @@ import { AppFooter } from "./AppFooter";
 import { AppHeader } from "./AppHeader";
 import { AppNavbar } from "./AppNavbar";
 
-type LayoutProps = {
+type LayoutProperties = {
   children: ReactNode;
   home?: boolean;
 };
 
-export function Layout({ children, home }: LayoutProps) {
+export function Layout({ children, home }: LayoutProperties) {
   const theme = useMantineTheme();
   const [opened, handlers] = useDisclosure();
 

@@ -98,12 +98,14 @@
       "plugin:jest/recommended"
     ],
     "rules": {
+      "unicorn/prefer-query-selector": "off",
       "unicorn/filename-case": [
         "error",
         {
           "cases": {
             "pascalCase": true,
-            "camelCase": true
+            "camelCase": true,
+            "kebabCase": true
           }
         }
       ],

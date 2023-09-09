@@ -9,9 +9,9 @@ import { getCookie, setCookie } from "cookies-next";
 import NextApp, { AppContext } from "next/app";
 import { ReactNode, useState } from "react";
 
-type AppProvidersProps = { children?: ReactNode; lol: ColorScheme };
+type AppProvidersProperties = { children?: ReactNode; lol: ColorScheme };
 
-function App({ children, lol }: AppProvidersProps) {
+function App({ children, lol }: AppProvidersProperties) {
   const [colorScheme, setColorScheme] = useState<ColorScheme>(lol);
 
   const toggleColorScheme = (value?: ColorScheme) => {
@@ -44,9 +44,9 @@ function App({ children, lol }: AppProvidersProps) {
 export default App;
 
 App.getInitialProps = async (appContext: AppContext) => {
-  const appProps = await NextApp.getInitialProps(appContext);
+  const appProperties = await NextApp.getInitialProps(appContext);
   return {
-    ...appProps,
+    ...appProperties,
     colorScheme: getCookie("mantine-color-scheme", appContext.ctx) || "dark",
   };
 };

@@ -1,6 +1,6 @@
-import { readFileSync, readdirSync } from "fs";
 import matter, { GrayMatterFile } from "gray-matter";
-import path from "path";
+import { readFileSync, readdirSync } from "node:fs";
+import path from "node:path";
 
 export type Post = {
   id: string;

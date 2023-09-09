@@ -1,12 +1,12 @@
 import { Title as MantineTitle } from "@mantine/core";
 import { ReactNode } from "react";
 
-type TitleProps = {
+type TitleProperties = {
   label: string;
   icon: ReactNode;
 };
 
-export default function Title({ label, icon }: TitleProps) {
+export default function Title({ label, icon }: TitleProperties) {
   return (
     <MantineTitle
       order={3}

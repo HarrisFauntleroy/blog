@@ -3,11 +3,11 @@ import { Divider, NavLink, Navbar } from "@mantine/core";
 import Link from "next/link";
 import { Notepad, Rss } from "phosphor-react";
 
-type AppNavbarProps = {
+type AppNavbarProperties = {
   opened: boolean;
 };
 
-export function AppNavbar({ opened }: AppNavbarProps) {
+export function AppNavbar({ opened }: AppNavbarProperties) {
   const links = [
     {
       title: "Posts",
