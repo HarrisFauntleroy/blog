@@ -27,7 +27,7 @@ export default async function generateRssFeed() {
       title: post.title,
       description: post.description || "",
       url: `${site_url}/posts/${post.id}`,
-      date: post.date,
+      date: post.createdAt,
     });
   });
 

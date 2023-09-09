@@ -9,7 +9,7 @@ type TitleProperties = {
 export default function Title({ label, icon }: TitleProperties) {
   return (
     <MantineTitle
-      order={3}
+      order={2}
       style={{ display: "flex", alignItems: "center", gap: "8px" }}
     >
       {label}

@@ -1,6 +1,7 @@
 ---
 title: "Example Blog Post"
-date: "2023-08-01"
+createdAt: "2023-08-01"
+updatedAt: "2023-09-10"
 image: "/posts/omega.png"
 published: true
 description: "Example blog post, nothing to see here."
@@ -9,13 +10,6 @@ tags:
   - "blog"
   - "post"
   - "markdown"
-  - "md"
-  - "katex"
-  - "mermaid"
-  - "flowchart"
-  - "footnotes"
-  - "lists"
-  - "tables"
 ---
 
 ![](omega.png)

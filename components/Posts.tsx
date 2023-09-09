@@ -32,7 +32,7 @@ export default function Posts({ posts, filterByTag }: PostsProperties) {
         { minWidth: "xl", cols: 4 },
       ]}
     >
-      {filtered?.map(({ id, date, title, description, image }) => (
+      {filtered?.map(({ id, createdAt, title, description, image }) => (
         <Card
           shadow="sm"
           radius="md"
@@ -58,7 +58,7 @@ export default function Posts({ posts, filterByTag }: PostsProperties) {
               </List.Item>
               <List.Item>
                 <small>
-                  <Date dateString={date} />
+                  <Date dateString={createdAt} />
                 </small>
               </List.Item>
               <List.Item>
