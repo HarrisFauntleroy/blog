@@ -97,6 +97,15 @@
       "plugin:jest/recommended"
     ],
     "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "cases": {
+            "pascalCase": true,
+            "camelCase": true
+          }
+        }
+      ],
       "react/react-in-jsx-scope": "off",
       "security/detect-object-injection": "off",
       "@next/next/no-html-link-for-pages": "off",
