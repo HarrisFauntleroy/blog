@@ -1,4 +1,4 @@
-import { writeFileSync } from "node:fs";
+import { writeFileSync } from "fs";
 import RSS, { type FeedOptions } from "rss";
 import { postsByTag } from "../pages/api/posts/tags/[tag]";
 
