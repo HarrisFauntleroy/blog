@@ -7,7 +7,7 @@ import { Layout } from "../../components/AppLayout";
 import { PostTags } from "../../components/PostTags";
 import Posts from "../../components/Posts";
 import Title from "../../components/Title";
-import generateRssFeed from "../../lib/generateRssFeed";
+import generateRssFeed from "../../lib/generateRss";
 import { Post } from "../../lib/posts";
 import { getAllTags, postsByTag } from "../api/posts/tags/[tag]";
 
