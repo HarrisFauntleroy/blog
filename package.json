@@ -90,6 +90,7 @@
       "plugin:import/recommended",
       "plugin:import/typescript",
       "plugin:security/recommended",
+      "plugin:unicorn/recommended",
       "plugin:sonarjs/recommended",
       "plugin:jsx-a11y/recommended",
       "plugin:storybook/recommended",
