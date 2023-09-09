@@ -39,21 +39,37 @@ A template for a blog, and portfolio.
 
 ## Features ✨
 
+- **🌗 Dark Mode**: Toggle between light and dark mode.
+- **📱 Responsive**: Works on all devices.
+- **🎨 Theming**: Simple UI customization.
+- **📡 RSS Feed**: Keep readers updated automatically.
+- **🔒 NextAuth**: Secure, simple logins.
 - **📝 Markdown**: with support for
   [GitHub Flavored Markdown](https://github.github.com/gfm/),
   [Katex](https://katex.org/),
   [Mermaid](https://mermaid-js.github.io/mermaid/#/), and more.
-- **📡 RSS Feed**: Keep readers updated automatically.
-- **🔒 NextAuth**: Secure, simple logins.
-- **🗺️ Sitemap Generation**: Auto-generate for better SEO.
 - **🔍 SEO**: Built-in search engine optimization features.
-- **🌗 Dark Mode**: Toggle between light and dark mode.
+- **🗺️ Sitemap Generation**: Auto-generate for better SEO.
 - **🧩 Modular**: Easy to extend.
-- **📱 Responsive**: Works on all devices.
-- **🎨 Theming**: Simple UI customization.
 - **💬 Comments**: In progress. 🚧
 - **📊 Analytics**: In progress. 🚧
 - **👩‍💼 Admin Panel**: In progress. 🚧
+
+## Dev Features ✨
+
+- ⚡ Full-stack React with Next.js
+- 🎉 Storybook deployed to Chromatic for UI development
+- 🌈 Chromatic for UI review and visual testing
+- 🗺️ Sitemap.xml and robots.txt with next-sitemap
+- 🤖 SEO metadata, JSON-LD, and Open Graph tags with Next SEO
+- 🧪 Unit Testing with Jest
+- 🧪 End-to-end testing with [Playwright](https://playwright.dev/)
+- 🧹 [ESLint](https://eslint.org) for code linting
+- 🎨 [Prettier](https://prettier.io) for code formatting
+- 🐶 Git hooks with [Husky](https://www.npmjs.com/package/husky)
+- 🌳 Trunk-Based Development
+- 🔄 Continuous integration with GitHub Actions
+- 🏷 TypeScript
 
 ## Local Development 🛠️
 
