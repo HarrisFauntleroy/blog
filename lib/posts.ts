@@ -6,8 +6,8 @@ export type Post = {
   id: string;
   title: string;
   published: boolean;
-  date: string;
-  lastUpdated: Date;
+  createdAt: string;
+  updatedAt: Date;
   content: string;
   tags: string[];
   hidden?: boolean;
@@ -25,8 +25,8 @@ export const buildPost = (
     id: matterResult.data.id || id,
     title: matterResult.data.title || "",
     published: matterResult.data.published || false,
-    date: matterResult.data.date || "",
-    lastUpdated: matterResult.data.lastUpdated || "",
+    createdAt: matterResult.data.createdAt || "",
+    updatedAt: matterResult.data.updatedAt || "",
     tags: matterResult.data.tags || [],
     hidden: matterResult.data.hidden || false,
     description: matterResult.data.description || "",
@@ -56,7 +56,7 @@ export function getSortedPostsData() {
     (post) => post.published && !post.hidden
   );
   return publishedPosts.sort((a, b) => {
-    return a.date < b.date ? 1 : -1;
+    return a.createdAt < b.createdAt ? 1 : -1;
   });
 }
 
@@ -111,7 +111,7 @@ export function sortPostsByDate(): Post[] {
     hidden: false,
   });
   return allPostsPublishedNotHidden.sort((a, b) => {
-    return a.date < b.date ? 1 : -1;
+    return a.createdAt < b.createdAt ? 1 : -1;
   });
 }
 
