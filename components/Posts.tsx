@@ -19,7 +19,7 @@ type PostsProperties = {
 export default function Posts({ posts, filterByTag }: PostsProperties) {
   const filtered = posts.filter((post) => {
     if (filterByTag) {
-      return post.tags.includes(filterByTag.toLowerCase());
+      return post.tags?.includes(filterByTag.toLowerCase());
     }
     return true;
   });
