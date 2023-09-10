@@ -22,7 +22,7 @@ export function AppHeader({ navigationHandlers }: AppHeaderProperties) {
 
   return (
     <Header
-      height={{ base: 50, md: 70 }}
+      height={{ base: 70 }}
       p="md"
       style={{
         display: "flex",
