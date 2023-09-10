@@ -2,18 +2,26 @@ import { readFileSync, readdirSync } from "fs";
 import matter, { GrayMatterFile } from "gray-matter";
 import path from "path";
 
+function getPostFromFile(fileName: string): Post {
+  const id = fileName.replace(/\.md$/, "");
+  const fullPath = path.join(postsDirectory, fileName);
+  const fileContents = readFileSync(fullPath, "utf8");
+  const matterResult = matter(fileContents);
+  return buildPost(matterResult, id);
+}
+
 export type Post = {
   id: string;
   title: string;
   published: boolean;
   createdAt: string;
-  updatedAt: Date;
-  content: string;
-  tags: string[];
+  updatedAt?: string;
+  tags?: string[];
   hidden?: boolean;
   description?: string;
   authors?: string[];
   image?: string;
+  content: string;
 };
 
 export const buildPost = (
@@ -39,20 +47,11 @@ export const buildPost = (
 const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getSortedPostsData() {
-  // Get file names under /posts
-  const fileNames = readdirSync(postsDirectory);
-  const allPostsData: Post[] = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "");
-    // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = readFileSync(fullPath, "utf8");
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-    return buildPost(matterResult, id);
-  });
+  const allPosts = readdirSync(postsDirectory).map((fileName) =>
+    getPostFromFile(fileName)
+  );
   // Hidden posts can be published, for things I want off the feed
-  const publishedPosts = allPostsData.filter(
+  const publishedPosts = allPosts.filter(
     (post) => post.published && !post.hidden
   );
   return publishedPosts.sort((a, b) => {
@@ -69,20 +68,9 @@ interface GetAllPostsOptions {
 
 export function getAllPosts(options?: GetAllPostsOptions) {
   const tag = options?.tag;
-  // Get file names under /posts
-  const fileNames = readdirSync(postsDirectory);
-  const allPosts: Post[] = fileNames.map((fileName: string) => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "");
-
-    // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = readFileSync(fullPath, "utf8");
-
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-    return buildPost(matterResult, id);
-  });
+  const allPosts = readdirSync(postsDirectory).map((fileName) =>
+    getPostFromFile(fileName)
+  );
 
   if (tag) {
     const filteredPosts = allPosts.filter(
@@ -102,6 +90,7 @@ export function getAllPosts(options?: GetAllPostsOptions) {
     (post) =>
       post.hidden === options?.hidden && post.published === options?.published
   );
+
   return options?.limit ? filteredPosts.slice(0, options.limit) : filteredPosts;
 }
 
