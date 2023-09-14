@@ -173,7 +173,7 @@
     "@mantine/prism": "^6.0.17",
     "@mantine/spotlight": "^6.0.17",
     "@mantine/tiptap": "^6.0.17",
-    "@prisma/client": "5.1.1",
+    "@prisma/client": "5.2.0",
     "@tiptap/extension-link": "^2.0.4",
     "@tiptap/react": "^2.0.4",
     "@tiptap/starter-kit": "^2.0.4",
