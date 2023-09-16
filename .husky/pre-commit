@@ -3,7 +3,7 @@ set -e
 . "$(dirname "$0")/_/husky.sh"
 
 echo "======== Starting Lint-Staged 🧐  ========"
-if pnpm lint-staged; then
+if bun lint-staged; then
     echo "======== Lint-Staged Completed Successfully ✅  ========"
     echo
     echo "Format ✅ Lint ✅ Commit ✅"

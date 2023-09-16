@@ -78,13 +78,13 @@ Here's how you can set up personal-blog-template in your local dev environment:
 **Installation**
 
 ```zsh
-# Install dependencies with pnpm
-pnpm install
+# Install dependencies with bun
+bun install
 ```
 
 ```zsh
 # Start development server
-pnpm run dev
+bun run dev
 ```
 
 _Please refer to the package.json for additional details and scripts._

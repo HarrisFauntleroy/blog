@@ -13,7 +13,7 @@
     "dev": "next dev",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
-    "lint:fix": "pnpm lint --fix",
+    "lint:fix": "bun lint --fix",
     "prepare": "husky install",
     "size": "git count-objects --human-readable",
     "start": "next start",
@@ -22,16 +22,16 @@
     "build-storybook": "storybook build",
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "test": "jest --passWithNoTests",
-    "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
+    "test:ci": "bun test --ci --coverage --maxWorkers=2",
     "test:storybook": "test-storybook",
-    "test:watch": "pnpm test --watchAll",
+    "test:watch": "bun test --watchAll",
     "type-check": "tsc --noEmit",
-    "type-check:watch": "pnpm type-check --watch"
+    "type-check:watch": "bun type-check --watch"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "pnpm format",
-      "pnpm lint:fix"
+      "bun format",
+      "bun lint:fix"
     ]
   },
   "browserslist": {
@@ -133,11 +133,9 @@
       ]
     },
     "ignorePatterns": [
-      ".pnpm",
       "dist",
       "generated",
       "node_modules",
-      "pnpm",
       "storybook-static",
       "styles"
     ],
@@ -187,9 +185,7 @@
     "dompurify": "^3.0.5",
     "dotenv": "^16.3.1",
     "embla-carousel-react": "^8.0.0-rc11",
-    "eslint": "8.48.0",
-    "eslint-config-next": "13.4.12",
-    "graphql": "^16.8.0",
+    "graphql": "^16.7.1",
     "graphql-request": "^6.1.0",
     "gray-matter": "^4.0.3",
     "next": "^13.4.13",
@@ -200,9 +196,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rss": "^1.2.2",
-    "sass": "^1.64.2",
-    "storybook": "^7.0.4",
-    "typescript": "5.1.6"
+    "sass": "^1.64.2"
   },
   "devDependencies": {
     "@jest/types": "29.6.3",
@@ -245,6 +239,7 @@
     "prisma": "5.2.0",
     "storybook": "^7.4.0",
     "storybook-dark-mode": "^3.0.1",
+    "typescript": "5.1.6",
     "ts-jest": "^29.1.0"
   }
 }

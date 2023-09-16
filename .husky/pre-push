@@ -7,7 +7,7 @@ echo "🔒 Therefore, tests, linting, and build must pass before pushing."
 echo
 
 echo "======== Starting Tests 🧪  ========"
-if pnpm test; then
+if bun test; then
     echo "======== Tests Completed Successfully ✅  ========"
 else
     echo "❌ Tests Failed"
@@ -16,7 +16,7 @@ fi
 
 echo
 echo "======== Starting Build 🏗️  ========"
-if pnpm build; then
+if bun build; then
     echo "======== Build Completed Successfully ✅  ========"
     echo
     echo "Test ✅ Build ✅ Pushed 🚀"
