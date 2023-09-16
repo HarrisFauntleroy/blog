@@ -13,7 +13,7 @@
     "dev": "next dev",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
-    "lint:fix": "bun lint --fix",
+    "lint:fix": "bun run lint --fix",
     "prepare": "husky install",
     "size": "git count-objects --human-readable",
     "start": "next start",
@@ -22,16 +22,16 @@
     "build-storybook": "storybook build",
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "test": "jest --passWithNoTests",
-    "test:ci": "bun test --ci --coverage --maxWorkers=2",
+    "test:ci": "bun run test --ci --coverage --maxWorkers=2",
     "test:storybook": "test-storybook",
-    "test:watch": "bun test --watchAll",
+    "test:watch": "bun run test --watchAll",
     "type-check": "tsc --noEmit",
-    "type-check:watch": "bun type-check --watch"
+    "type-check:watch": "bun run type-check --watch"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "bun format",
-      "bun lint:fix"
+      "bun run format",
+      "bun run lint:fix"
     ]
   },
   "browserslist": {
