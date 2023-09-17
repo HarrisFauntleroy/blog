@@ -2,12 +2,35 @@
 set -e
 . "$(dirname "$0")/_/husky.sh"
 
+echo "🌳 This is a Trunk-Based Development branch."
+echo "🔒 Therefore, tests, linting, and build must pass before pushing."
+echo
+
+echo "======== Starting Tests 🧪  ========"
+if bun run test; then
+    echo "======== Tests Completed Successfully ✅  ========"
+else
+    echo "❌ Tests Failed"
+    exit 1
+fi
+
+echo
+echo "======== Starting Build 🏗️  ========"
+if bun run build; then
+    echo "======== Build Completed Successfully ✅  ========"
+else
+    echo "❌ Build Failed"
+    exit 1
+fi
+
+echo
 echo "======== Starting Lint-Staged 🧐  ========"
 if bun run lint-staged; then
     echo "======== Lint-Staged Completed Successfully ✅  ========"
-    echo
-    echo "Format ✅ Lint ✅ Commit ✅"
 else
     echo "❌ Lint-Staged Failed"
     exit 1
 fi
+
+echo
+echo "Test ✅ Build ✅ Format ✅ Lint ✅ Commit ✅"

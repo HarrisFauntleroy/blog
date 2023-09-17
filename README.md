@@ -99,8 +99,10 @@ This repository adopts a **Trunk-Based Development** approach to encourage:
 
 ### Automated Git Hooks
 
-To maintain code quality, we've set up automated Git hooks that perform the
-following tasks before any `git push` operation:
+To maintain code quality, we've set up automated Git hooks that perform various
+tasks at different stages of the Git workflow:
+
+Pre-Commit Hooks:
 
 - **Linting**: Enforces a consistent code style across the codebase.
 - **Formatting**: Applies standardized code formatting.
