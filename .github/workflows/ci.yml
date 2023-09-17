@@ -15,21 +15,14 @@ jobs:
     permissions: write-all
     timeout-minutes: 15
     runs-on: ubuntu-20.04
-    strategy:
-      matrix:
-        node-version: [18]
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
+
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "bun"
 
       - name: Install dependencies 📦
         run: bun install
