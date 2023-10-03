@@ -101,6 +101,7 @@
       "unicorn/prefer-node-protocol": "off",
       "unicorn/prevent-abbreviations": "warn",
       "unicorn/prefer-query-selector": "warn",
+      "unicorn/prefer-module": "off",
       "unicorn/filename-case": [
         "error",
         {
