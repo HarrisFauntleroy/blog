@@ -156,7 +156,7 @@
     "@auth/core": "^0.15.2",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
-    "@harrisfauntleroy/design-system": "^2.1.9",
+    "@harrisfauntleroy/design-system": "^2.2.7",
     "@mantine/carousel": "^6.0.21",
     "@mantine/core": "^6.0.21",
     "@mantine/dates": "^6.0.21",
