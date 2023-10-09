@@ -211,7 +211,7 @@
     "@storybook/react": "^7.4.5",
     "@storybook/react-vite": "^7.4.5",
     "@storybook/test-runner": "^0.13.0",
-    "@storybook/testing-library": "^0.2.1",
+    "@storybook/testing-library": "^0.2.2",
     "@types/jest": "^29.5.5",
     "@types/rss": "^0.0.30",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
