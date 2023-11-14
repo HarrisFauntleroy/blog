@@ -213,7 +213,7 @@
     "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.2",
     "@types/jest": "^29.5.7",
-    "@types/rss": "^0.0.31",
+    "@types/rss": "^0.0.32",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "chromatic": "^6.24.1",
