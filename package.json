@@ -175,7 +175,7 @@
     "@tiptap/extension-link": "^2.1.13",
     "@tiptap/react": "^2.1.13",
     "@tiptap/starter-kit": "^2.1.13",
-    "@types/node": "20.10.2",
+    "@types/node": "20.10.3",
     "@types/react": "18.2.41",
     "@types/react-dom": "18.2.17",
     "autoprefixer": "10.4.16",
