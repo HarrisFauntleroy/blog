@@ -154,7 +154,7 @@
     }
   },
   "dependencies": {
-    "@auth/core": "^0.18.4",
+    "@auth/core": "^0.18.5",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@harrisfauntleroy/design-system": "^2.2.7",
