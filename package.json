@@ -235,7 +235,7 @@
     "husky": "^8.0.3 || ^9.0.0",
     "jest": "29.7.0",
     "lint-staged": "^13.3.0 || ^15.0.0",
-    "prisma": "5.9.1",
+    "prisma": "5.10.1",
     "storybook": "^7.6.6",
     "storybook-dark-mode": "^3.0.3",
     "ts-jest": "^29.1.1",
