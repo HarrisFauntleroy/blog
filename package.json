@@ -210,7 +210,7 @@
     "@storybook/nextjs": "^7.6.6",
     "@storybook/react": "^7.6.6",
     "@storybook/react-vite": "^7.6.6",
-    "@storybook/test-runner": "^0.16.0",
+    "@storybook/test-runner": "^0.16.0 || ^0.17.0",
     "@storybook/testing-library": "^0.2.2",
     "@types/jest": "^29.5.11",
     "@types/rss": "^0.0.32",
