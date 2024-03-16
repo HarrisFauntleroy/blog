@@ -237,7 +237,7 @@
     "lint-staged": "^13.3.0 || ^15.0.0",
     "prisma": "5.11.0",
     "storybook": "^7.6.6 || ^8.0.0",
-    "storybook-dark-mode": "^3.0.3",
+    "storybook-dark-mode": "^3.0.3 || ^4.0.0",
     "ts-jest": "^29.1.1",
     "typescript": "5.4.2"
   }
