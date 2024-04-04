@@ -177,7 +177,7 @@
     "@tiptap/starter-kit": "^2.1.13",
     "@types/node": "20.12.4",
     "@types/react": "18.2.74",
-    "@types/react-dom": "18.2.23",
+    "@types/react-dom": "18.2.24",
     "autoprefixer": "10.4.19",
     "cookies-next": "^2.1.2",
     "date-fns": "^2.30.0",
