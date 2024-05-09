@@ -186,7 +186,7 @@
     "dotenv": "^16.3.1",
     "embla-carousel-react": "^8.0.0-rc15",
     "graphql": "^16.8.1",
-    "graphql-request": "^6.1.0",
+    "graphql-request": "^6.1.0 || ^7.0.0",
     "gray-matter": "^4.0.3",
     "next": "^13.5.6",
     "next-auth": "^4.24.5",
