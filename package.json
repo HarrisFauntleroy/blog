@@ -193,7 +193,7 @@
     "next-remove-imports": "^1.0.12",
     "next-sitemap": "^4.2.3",
     "phosphor-react": "^1.4.1",
-    "postcss": "8.4.38",
+    "postcss": "8.4.47",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rss": "^1.2.2",
