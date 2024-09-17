@@ -178,7 +178,7 @@
     "@types/node": "20.12.14",
     "@types/react": "18.3.6",
     "@types/react-dom": "18.3.0",
-    "autoprefixer": "10.4.19",
+    "autoprefixer": "10.4.20",
     "cookies-next": "^2.1.2",
     "date-fns": "^2.30.0",
     "dayjs": "^1.11.10",
