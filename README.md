@@ -142,3 +142,7 @@ to change. We appreciate your patience and value your feedback! 🙌
 | ![Image 4](/public/4.png) | ![Image 5](/public/5.png) |
 | :-----------------------: | :-----------------------: |
 |         _Image 4_         |         _Image 5_         |
+
+---
+
+![Visualization of this repo](./diagram.svg)
